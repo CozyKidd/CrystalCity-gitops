@@ -136,7 +136,6 @@ controls:
 ###########################################################
 labels:
   - paths: ./labels/*.yml
-
   webhook_settings:
 activities_webhook:
 enable_activities_webhook: true

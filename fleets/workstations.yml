@@ -75,10 +75,12 @@ controls:
       - paths: ../platforms/macos/declaration-profiles/macos27-deferral.json
         labels_exclude_any:
           - macOS 27 beta testers
-      - paths: ../platforms/macos/configuration-profiles/*.mobileconfig
+      # Fleet errors on a glob that matches no files. Uncomment once
+      # the folder has at least one file in it.
+      # - paths: ../platforms/macos/configuration-profiles/*.mobileconfig
   windows_settings:
     configuration_profiles:
-      - paths: ../platforms/windows/configuration-profiles/*.xml
+      # - paths: ../platforms/windows/configuration-profiles/*.xml
 
   ###########################################################
   # Managed disk encryption
@@ -123,8 +125,9 @@ controls:
   ###########################################################
   scripts:
     - paths: ../platforms/macos/scripts/*.sh
-    - paths: ../platforms/windows/scripts/*.ps1
-    - paths: ../platforms/linux/scripts/*.sh
+    # Uncomment once the folder has at least one file in it.
+    # - paths: ../platforms/windows/scripts/*.ps1
+    # - paths: ../platforms/linux/scripts/*.sh
 
 ###########################################################
 # Reports
@@ -138,10 +141,12 @@ controls:
 # > using `paths` below.
 ###########################################################
 reports:
-  - paths: ../platforms/all/reports/*.yml
-  - paths: ../platforms/macos/reports/*.yml
-  - paths: ../platforms/windows/reports/*.yml
-  - paths: ../platforms/linux/reports/*.yml
+  # Fleet errors on a glob that matches no files. Uncomment each line
+  # once its folder has at least one report in it.
+  # - paths: ../platforms/all/reports/*.yml
+  # - paths: ../platforms/macos/reports/*.yml
+  # - paths: ../platforms/windows/reports/*.yml
+  # - paths: ../platforms/linux/reports/*.yml
 
 ###########################################################
 # Policies & automations
@@ -157,8 +162,9 @@ reports:
 ###########################################################
 policies:
   - paths: ../platforms/macos/policies/*.yml
-  - paths: ../platforms/windows/policies/*.yml
-  - paths: ../platforms/linux/policies/*.yml
+  # Uncomment once the folder has at least one policy in it.
+  # - paths: ../platforms/windows/policies/*.yml
+  # - paths: ../platforms/linux/policies/*.yml
 
 ###########################################################
 # Software available for install

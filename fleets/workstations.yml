@@ -73,7 +73,7 @@ minimum_version: "26.5"
   apple_settings:
     configuration_profiles:
       - paths: ../platforms/macos/declaration-profiles/macos27-deferral.json
-      labe;s_exclude_any:
+      labels_exclude_any:
         - macOS 27 beta testers
       - paths: ../platforms/macos/configuration-profiles/*.mobileconfig
   windows_settings:
